@@ -1,4 +1,3 @@
-# flydek
 # FLYDEK
 
 **A desk control panel for PC flight simulators.** The 12 keys around a 4-inch screen have no printed labels: the screen draws them, so every aircraft profile can rename every key. Two dual knobs, MASTER WARN / MASTER CAUT buttons, and a clip-on Lever Pack with a spring-locked gear lever and a clicking flaps lever complete the deck.
