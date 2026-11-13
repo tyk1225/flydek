@@ -1,0 +1,12 @@
+.history/
+*-backups/
+*.lck
+~*
+fp-info-cache
+*.kicad_prl
+.DS_Store
+*.bak
+gerbers/old_x2_plot/
+devlog_pictures/
+MSP4021_Size.pdf
+lib/backup_original/

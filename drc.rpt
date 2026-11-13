@@ -1,0 +1,34 @@
+** Drc report for FLYDEK-v1.kicad_pcb **
+** Created on 2026-11-11T19:49:45 **
+** Report includes: Errors **
+
+** Found 4 DRC violations **
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(200.5000 mm, 126.2500 mm): PTH pad 1 [/KEY_MENU] of SW16
+    @(204.0000 mm, 124.5000 mm): Footprint U1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(200.5000 mm, 113.7500 mm): PTH pad 1 [/KEY_MENU] of SW16
+    @(204.0000 mm, 124.5000 mm): Footprint U1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(205.5000 mm, 126.2500 mm): PTH pad 2 [GND] of SW16
+    @(204.0000 mm, 124.5000 mm): Footprint U1
+[pth_inside_courtyard]: PTH inside courtyard
+    Local override; error
+    @(205.5000 mm, 113.7500 mm): PTH pad 2 [GND] of SW16
+    @(204.0000 mm, 124.5000 mm): Footprint U1
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
