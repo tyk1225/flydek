@@ -535,7 +535,7 @@
       "netlist": "",
       "plot": "gerbers/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "FLYDEK-v1.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

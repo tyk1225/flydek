@@ -1,0 +1,37 @@
+Reference,Qty,Description,Manufacturer,Part number,Supplier,Link,Unit price,Currency,Line total,Status,Notes
+SW1-SW16,16,Tactile switch 12x12 mm,Omron,B3F-4055,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=B3F-4055,587,KRW,9392,to buy,"12 softkeys + WARN, CAUT, PROFILE, MENU"
+(caps),14,"Switch cap, black",Omron,B32-1310,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=B32-1310,444,KRW,6216,to buy,"softkeys, PROFILE, MENU"
+(cap),1,"Switch cap, red",Omron,B32-1380,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=B32-1380,516,KRW,516,to buy,WARN
+(cap),1,"Switch cap, orange",Omron,B32-1320,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=B32-1320,516,KRW,516,to buy,CAUT
+U2,1,"16-bit I/O expander, I2C, DIP-28",Microchip,MCP23017-E/SP,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=MCP23017-E/SP,2355,KRW,2355,to buy,reads the 16 keys
+U2 socket,1,"DIP-28 socket, 0.3""",On Shore,ED281DT,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=ED281DT,1198,KRW,1198,to buy,
+J4,1,JST XH 8-pin side-entry header,JST,S8B-XH-A,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=S8B-XH-A,544,KRW,544,to buy,Lever Pack connector
+U1 sockets,2,20-pin female header 2.54 mm,Sullins,PPTC201LFBN-RC,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=PPTC201LFBN-RC,1589,KRW,3178,to buy,Pico sits in sockets
+J3,1,1x40 male header 2.54 mm (cut 9),Sullins,PRPC040SAAN-RC,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=PRPC040SAAN-RC,1714,KRW,1714,to buy,screen connector
+D1,1,LED 3 mm red diffused,Kingbright,WP710A10ID,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=WP710A10ID,334,KRW,334,to buy,MASTER WARN
+D2,1,LED 3 mm orange diffused,Kingbright,WP710A10ND,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=WP710A10ND,334,KRW,334,to buy,MASTER CAUT (price assumed = red)
+"R1,R2",2,Resistor 150 ohm 1/4 W,Stackpole,CF14JT150R,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=CF14JT150R,139,KRW,278,to buy,LED resistors
+"R3,R4",2,Resistor 4.7 kohm 1/4 W,Stackpole,CF14JT4K70,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=CF14JT4K70,139,KRW,278,to buy,I2C pull-ups
+R5,1,Resistor 10 kohm 1/4 W,Stackpole,CF14JT10K0,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=CF14JT10K0,139,KRW,139,to buy,
+C1,1,"Capacitor 100 nF 50 V X7R, 5 mm",Vishay,K104K15X7RF5TL2,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=K104K15X7RF5TL2,300,KRW,300,to buy,MCP23017 decoupling
+C2,1,Capacitor 10 uF 25 V electrolytic,Panasonic,ECA-1EM100,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=ECA-1EM100,321,KRW,321,to buy,
+(screen spacers),4,M3 nylon hex spacer 4 mm F-F,Essentra,CBTS005A,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=CBTS005A,595,KRW,2380,to buy,between board and screen
+(shipping),1,"DigiKey Korea shipping (order under 60,000 KRW)",,,DigiKey Korea,,20000,KRW,20000,to buy,"free over 60,000 KRW"
+U1,1,Raspberry Pi Pico 2,Raspberry Pi,SC1631,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=SC1631,8529,KRW,8529,owned,
+(U1 headers),1,Raspberry Pi Pico headers kit,SparkFun,PRT-17907,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=1568-17907-ND,2216,KRW,2216,owned,
+"ENC1,ENC2",2,Dual concentric rotary encoder with push,Bourns,PEC11D-4120F-S0015,DigiKey Korea,https://www.digikey.kr/en/products/result?keywords=PEC11D-4120F-S0015,9797,KRW,19594,owned,the two dual knobs
+(screen),1,"4.0"" 480x320 SPI TFT, ST7796, no touch",Elecrow,DLS25040B2,Elecrow,https://www.elecrow.com,13.5,USD,13.5,ordered,mounted behind the window
+(screen shipping),1,Elecrow shipping (DDP Economy) + shipping fee difference,,,Elecrow,,13.04,USD,13.04,ordered,8.04 + 5.00
+PCB,1,"FLYDEK v1 PCB 190x120 mm, 2-layer, black (min. order 5)",JLCPCB,FLYDEK-v1,JLCPCB,https://jlcpcb.com,16.6,USD,16.6,owned,price is for 5 boards; Gerbers in this repo
+(PCB shipping),1,"JLCPCB shipping (UPS), minus 6 USD coupon",,,JLCPCB,,3.65,USD,3.65,owned,9.65 - 6.00
+(legs),5,Brass hex standoff M3 x 35 mm F-F,JLCMC,EJLD-U3-M3-L35,JLCMC,https://jlcmc.com/product/s/E09/EJLD/double-end-standoff-hexagonal-stud,0.1203,USD,0.6,ordered,legs at H1-H5
+(leg screws),5,"Pan head screw M3 x 6, stainless",JLCMC,EDLU-S1-M-M3-L6,JLCMC,https://jlcmc.com/product/s/E02/EDLU/gb-t-818-823-phillips-pan-head-screw,0.0057,USD,0.03,ordered,
+(screen screws),4,"Pan head screw M3 x 12, stainless",JLCMC,EDLU-S1-M-M3-L12,JLCMC,https://jlcmc.com/product/s/E02/EDLU/gb-t-818-823-phillips-pan-head-screw,0.0082,USD,0.03,ordered,
+(screen nuts),4,"Hex nut M3, stainless",JLCMC,EMLA-S1W-BL1-M3,JLCMC,https://jlcmc.com/product/s/E04/EMLA/hex-nut-standard-thin-thickened-coarse-fine-thread,0.0037,USD,0.01,ordered,
+(JLCMC shipping),1,JLCMC E-POST shipping (parts covered by a coupon),,,JLCMC,,1.5,USD,1.5,ordered,
+(wires),8,Female-female jumper wire,generic,,owned,,0,KRW,0,owned,screen to J3
+
+TOTAL (KRW items),,,,,,,,KRW,80332,,
+TOTAL (USD items),,,,,,,,USD,48.96,,
+"TOTAL (approx. USD, 1 USD = 1450 KRW)",,,,,,,,USD,104.36,,prices checked 11-12 Nov 2026
+Still to buy (approx. USD),,,,,,,,USD,34.48,,DigiKey parts for 1 board + shipping
