@@ -477,7 +477,7 @@
 			(uuid "9ed3e356-37ad-4d9c-b269-1ec411a6f04f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -723,7 +723,7 @@
 			(uuid "3c9e4805-ec30-4be6-bc66-216f3d88d389")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -969,7 +969,7 @@
 			(uuid "0ba8cc34-44b6-4932-88ad-23d0e43ba0f2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1331,7 +1331,7 @@
 			(uuid "1c1fc3c2-9379-4327-b3ee-c1bba441a5b4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1577,7 +1577,7 @@
 			(uuid "efd4ac77-6321-404c-8b62-44f5651ff97e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1823,7 +1823,7 @@
 			(uuid "624a281b-a5ce-4bb7-9794-970277a3d3b8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2301,7 +2301,7 @@
 			(uuid "6898d1ae-7a86-4966-a2b5-1ac8a24e512c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2547,7 +2547,7 @@
 			(uuid "f45d25af-0d6d-48f8-a4f4-e5c21aef30b4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3025,7 +3025,7 @@
 			(uuid "7ddaf41f-dab1-4612-80f5-d5b1764471c5")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3488,7 +3488,7 @@
 			(uuid "dd37577c-2ad5-4582-85a4-d7609a7a89c9")
 		)
 		(embedded_fonts no)
-		(model "PEC11D-4120F-S0015.stp"
+		(model "${KIPRJMOD}/lib/3d/PEC11D-4120F-S0015.stp"
 			(offset
 				(xyz 0.1700021974 -0.0599947991 -4.030000149)
 			)
@@ -3951,7 +3951,7 @@
 			(uuid "47310cad-13c3-4a80-bdc3-1472878e353d")
 		)
 		(embedded_fonts no)
-		(model "PEC11D-4120F-S0015.stp"
+		(model "${KIPRJMOD}/lib/3d/PEC11D-4120F-S0015.stp"
 			(offset
 				(xyz 0.1700021974 -0.0599947991 -4.030000149)
 			)
@@ -4559,7 +4559,7 @@
 			(uuid "0ce8e128-3806-4a8f-8462-0a4726eec4bd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4805,7 +4805,7 @@
 			(uuid "d324ba83-962d-4403-ae6d-32e69b3bc23c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5051,7 +5051,7 @@
 			(uuid "2f4b77db-48e7-418a-94e2-a67b9a0c4996")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5529,7 +5529,7 @@
 			(uuid "359ee251-3242-4730-9635-5a947eda9358")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6021,7 +6021,7 @@
 			(uuid "289beb09-1f56-45fc-ac5d-eb5395a02931")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6267,7 +6267,7 @@
 			(uuid "c5a68372-b67a-48b8-9ae8-91880113d3fd")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6513,7 +6513,7 @@
 			(uuid "2f56f2e8-4460-4068-8f36-01f7d30b6fad")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH-12mm_Wuerth-430476085716.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12714,9 +12714,53 @@
 			(uuid "ecf4b469-bf9f-472d-8220-b9d6fbdddbfd")
 		)
 		(embedded_fonts no)
-		(model "C:/Users/ncara/OneDrive/IoT/Tools/KiCad/RP-Pico Libraries/Pico.wrl"
+		(model "${KIPRJMOD}/lib/3d/rpi_pico2.step"
 			(offset
+				(xyz 0 0 11)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 180)
+			)
+		)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x20_P2.54mm_Vertical.step"
+			(offset
+				(xyz -8.89 24.13 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x20_P2.54mm_Vertical.step"
+			(offset
+				(xyz 8.89 24.13 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x20_P2.54mm_Vertical.step"
+			(offset
+				(xyz -8.89 24.13 8.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x20_P2.54mm_Vertical.step"
+			(offset
+				(xyz 8.89 24.13 8.5)
 			)
 			(scale
 				(xyz 1 1 1)

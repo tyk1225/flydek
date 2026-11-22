@@ -40,7 +40,7 @@
   (pad W1 thru_hole circle (at 2.5 -7) (size 1.800 1.800) (drill 1.2) (layers *.Cu *.Mask))
   (pad MH1 thru_hole circle (at -5.5 0) (size 4.500 4.500) (drill 3) (layers *.Cu *.Mask))
   (pad MH2 thru_hole circle (at 5.5 0) (size 4.500 4.500) (drill 3) (layers *.Cu *.Mask))
-  (model PEC11D-4120F-S0015.stp
+  (model "${KIPRJMOD}/lib/3d/PEC11D-4120F-S0015.stp"
     (at (xyz 0.006693 -0.002362 -0.15866142558301))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -180))
