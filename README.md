@@ -1,99 +1,88 @@
 # FLYDEK
 
-**A desk control panel for PC flight simulators.** The 12 keys around a 4-inch screen have no printed labels: the screen draws them, so every aircraft profile can rename every key. Two dual knobs, MASTER WARN / MASTER CAUT buttons, and a clip-on Lever Pack with a spring-locked gear lever and a clicking flaps lever complete the deck.
+**A desk control panel for PC flight simulators, with a screen that draws the labels for its keys.**
 
-> Status: **design stage**. A hand-wired prototype is next. This is a Hack Club Forge project.
+<img width="2400" height="1350" alt="FLYDEK_cover_main" src="https://github.com/user-attachments/assets/891a45a5-313e-4bcf-8dba-52b9d660ea76" />
 
-<!-- Add the cover image here once it's in the repo, e.g. ![FLYDEK V4](docs/flydek-v4.png) -->
 
-## Why
+> Status: The PCB is designed, ordered and tested, the Pico is soldered, and firmware is next!
 
-- **Remembering what each control does is the most common complaint about generic sim panels.** FLYDEK shows the current label for every key on its screen, and the labels change when you switch profile or aircraft.
-- **Many panels break after sim updates or need fiddly drivers.** FLYDEK aims to work with no driver, as a normal USB game controller.
-- **Real cockpit feel on a desk:** knobs with click detents, a gear lever you pull to unlock, and a flaps lever that clicks into each notch.
+## What it is
 
-## Features (V4 design)
+FLYDEK v1 is a control deck that sits on your desk next to the keyboard while you fly. A 4-inch screen sits behind a window cut into the circuit board, with 6 keys above it and 6 keys below it. The keys have no printed labels: the screen draws each key's label right next to it, so the same 12 keys can do different jobs in each sim or aircraft profile.
 
-### FLYDEK Core
-- 4-inch 480 × 320 screen showing key labels, the profile name and live sim data
-- 12 softkeys (6 above, 6 below the screen)
-- 2 dual concentric knobs with push (4 functions)
-- PROFILE and MENU buttons
-- MASTER WARN and MASTER CAUT: half-transparent caps set into the deck, lit from below
-- Black circuit-board faceplate with backlit lettering
-- One USB-C cable to the PC, plus an add-on port
+On the left are two dual knobs (an outer ring and an inner knob, both with a push), for things you turn a lot, like heading and altitude. MASTER WARN and MASTER CAUT buttons with red and orange lights sit in the top-left corner, like in a real cockpit, and PROFILE and MENU buttons are on the right. A plug on the side (J4) is ready for a Lever Pack add-on with a gear lever and a flaps lever.
 
-### Lever Pack (clips onto either side)
-- Gear lever: UP / OFF / DN, pull to unlock, spring snaps it into each notch
-- Flaps lever: a spring ball clicks into a curved gate; an AS5600 magnet sensor reads the angle
-- Two swappable flaps gates: A-style (0, 1, 2, 3, FULL) and B-style (UP to 40 with gates at 1 and 15)
-- 3 gear-down lights
+What makes it different: the labels change on the screen, and the plan is for FLYDEK to show up as a normal USB game controller and keyboard, so it needs no driver.
 
-### Screen themes
-- **A-style:** narrow monospace font; green = engaged, cyan = values you set
-- **B-style:** bold sans font; green = engaged, magenta = values you set
+## How to use it
 
-## Hardware
+Firmware v1 is still being written, so this is how v1 is planned to work:
 
-| Part | Choice |
-| --- | --- |
-| Microcontroller | Raspberry Pi RP2350B on FLYDEK's own 2-layer board (Raspberry Pi Pico 2 for the prototype) |
-| Screen | 4.0" 480 × 320 SPI TFT, ST7796 driver |
+1. **Plug it in:** connect the Pico 2's USB port to your PC. FLYDEK shows up as a game controller and a keyboard.
+2. **Pick a profile:** press **PROFILE** to switch between Desktop, Microsoft Flight Simulator and Roblox. The screen redraws all 12 key labels.
+3. **Press a key:** each key sends the button or shortcut written next to it on the screen.
+4. **Turn the knobs:** the outer ring and the inner knob each send their own inputs (for example heading and altitude), and pushing the knob is a third input.
+5. **MENU:** opens settings on the screen (for example brightness).
+6. **MASTER WARN / MASTER CAUT:** buttons you can map to your sim's warning controls; their lights are controlled by the firmware.
+
+## How to build it
+
+1. Order the PCB from the Gerbers in this repo (2-layer, 190 × 120 mm).
+2. Buy the parts in `BOM.csv`.
+3. Solder the low parts first: resistors, capacitors, the 28-pin socket for the MCP23017, then the two 20-pin sockets for the Pico 2, the screen header (J3) and the Lever Pack plug (J4) on the back.
+4. Solder the 16 key switches, the 2 knobs and the 2 LEDs on the front.
+5. Put the MCP23017 into its socket and the Pico 2 into its sockets.
+6. Mount the screen behind the window on 4 mm spacers with M3 × 12 screws, and screw on the 4 × 35 mm brass legs.
+7. Flash the firmware: hold BOOTSEL on the Pico 2, plug in USB, and drag the `.uf2` file onto the drive that appears.
+
+## Why I made it
+
+I fly Microsoft Flight Simulator and various flight sims on my PC, and pressing keyboard shortcuts in the middle of a flight breaks the feeling of flying a real plane. Ready-made sim panels I looked at cost about $130–180, and their buttons have fixed labels. My motto is "Don't buy it, make it", so I decided to design my own. FLYDEK started as an idea for a flight stick and turned into this deck. It's also my first real PCB: I wanted to learn how to design a circuit board from scratch, route every track myself and solder it together.
+
+## Hardware (v1)
+
+| Part | v1 |
+|---|---|
+| Board | 190 × 120 mm, 2-layer, through-hole, designed and routed by hand in KiCad 10 |
+| Brain | Raspberry Pi Pico 2 in two 20-pin sockets on the back |
+| Screen | 4.0" 480 × 320 SPI TFT (ST7796S, no touch), behind a window in the board |
+| Keys | 16 × Omron B3F-4055: 12 softkeys around the screen, PROFILE, MENU, MASTER WARN, MASTER CAUT |
+| Key reading | MCP23017 I/O expander (I2C) for the softkeys, PROFILE and MENU; WARN/CAUT on the Pico |
 | Knobs | 2 × Bourns PEC11D dual concentric encoders with push |
-| Buttons | 16 tactile switches, read directly by the RP2350B |
-| Lights | 25 × SK6812MINI-E RGB LEDs (through a 3.3 V → 5 V level shifter) |
-| Flaps sensor | AS5600 magnetic angle sensor + diametric magnet |
-| Gear sensing | 3 × Omron D2F-01L micro switches |
-| Power | USB-C, 5.1 kΩ CC resistors, USBLC6-2SC6 ESD protection, polyfuse, AMS1117-3.3 |
-| Case | Black PCB faceplate + 3D-printed tray with a steel weight + rubber feet |
+| Lights | 2 × 3 mm LEDs (red WARN, orange CAUT) |
+| Add-on port | J4 (JST XH 8-pin): gear up/off/down + I2C for the Lever Pack |
+| Mounting | 4 × 35 mm brass M3 legs; screen on 4 mm spacers with M3 × 12 screws |
 
-Power budget: the screen and chips use about 270 mA, so LED brightness is capped (about 20% of full white) to stay inside USB 2.0's 500 mA.
+## Files
 
-## Software (planned)
+- KiCad project and Gerbers: this repo
+- 3D model: `cad/FLYDEK-v1.step`
+- Render: `images/FLYDEK-v1.png`
+- Parts list with links and prices: `BOM.csv` (about $104 for one board)
 
-- **Firmware:** Pico SDK + TinyUSB composite device (game controller + keyboard/media keys + a link for the web configurator), LVGL for the screen
-- **Web configurator:** runs in Chrome or Edge over USB; profiles, key labels, actions and LED colours, saved on the deck
-- **Live sim data:** through MobiFlight (FLYDEK registered as a custom board)
-- **Sims:** Microsoft Flight Simulator 2020 and 2024, X-Plane 12
+## Status
 
-## Roadmap
+- [x] Schematic and PCB designed in KiCad 10 (routed by hand)
+- [x] 5 PCBs made by JLCPCB, beep-tested (17 Nov)
+- [x] Pico 2 headers soldered and checked for shorts (20–21 Nov)
+- [ ] STEP with every 3D model
+- [ ] Screen arrives (in customs, 22 Nov)
+- [ ] Firmware v1: USB game controller + key labels on the screen
+- [ ] Remaining parts, then solder and test the full board
+- [ ] Lever Pack (subproject)
 
-- [x] Concept and four design versions (v1 → V4)
-- [x] Research: parts, costs, competitors, manufacturing
-- [ ] Screen layout prototype (LVGL)
-- [ ] 3D-printed flaps lever to test the click
-- [ ] Hand-wired prototype on a Pico 2 (screen, one dual knob, AS5600, buttons)
-- [ ] Firmware: game controller + labels on the screen
-- [ ] KiCad: RP2350B main board + faceplate
-- [ ] First 5 boards from JLCPCB
-- [ ] Live data through MobiFlight
-- [ ] Test units with other sim players
+## Where FLYDEK is going (V4, later)
 
-## Prototype budget (Forge Tier 2, estimates)
-
-| Item | About |
-| --- | --- |
-| 5 main boards, small parts soldered by JLCPCB, plus shipping | $90 |
-| 4-inch ST7796 screen plus shipping | $20 |
-| 2 × Bourns PEC11D dual encoders | $14 |
-| AS5600 module + magnet | $7 |
-| Tactile switches, caps, 3 micro switches | $8 |
-| 5 black PCB faceplates (same order) | $20 |
-| Screws, filament | $5 |
-| **Total** | **about $165** |
-
-## Repository layout (planned)
-
-```
-hardware/   KiCad files for the main board, faceplate and Lever Pack sensor board
-firmware/   RP2350 firmware (Pico SDK, TinyUSB, LVGL)
-case/       3D-print files for the tray, levers, gates and caps
-docs/       Drawings, photos and notes
-```
+- My own RP2350B board instead of the Pico 2!
+- Backlit black PCB faceplate and RGB light
+- Lever Pack: spring-locked gear lever, clicking flaps lever
+- Two screen themes (A-style and B-style)
+- Web configurator for profiles and key labels
+- Live sim data through MobiFlight
 
 ## AI use
-
-Planning, research, and the concept drawings were made with help from Claude (an AI assistant), and this README was drafted with its help. The building, wiring, soldering, circuit-board layout and code are done by me.
+Planning & Research
 
 ## Not affiliated
 
