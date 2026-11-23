@@ -82,7 +82,7 @@ I fly Microsoft Flight Simulator and various flight sims on my PC, and pressing 
 - Live sim data through MobiFlight
 
 ## AI use
-Planning, Research, debugging and modeling
+Claude AI was used for research, 3d rendering, file management, and debugging
 
 ## Not affiliated
 
