@@ -67,7 +67,7 @@ I fly Microsoft Flight Simulator and various flight sims on my PC, and pressing 
 - [x] 5 PCBs made by JLCPCB, beep-tested (17 Nov)
 - [x] Pico 2 headers soldered and checked for shorts (20–21 Nov)
 - [x] STEP with every 3D model
-- [ ] Screen arrives (in customs, 22 Nov)
+- [x] Screen arrives (in customs, 22 Nov)
 - [ ] Firmware v1: USB game controller + key labels on the screen
 - [ ] Remaining parts, then solder and test the full board
 - [ ] Lever Pack (subproject)
